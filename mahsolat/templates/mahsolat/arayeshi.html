@@ -1,0 +1,17 @@
+{%extends "mahsolat/master.html"%}
+{%block "main"%}
+<section>
+   <div class="row">
+       {%for k in kalaha%}
+       
+        <div class="col-lg-4 col-md-6 row ">
+            <div class="class-item">
+                <div class="class-img">
+                    <img  src="{{k.img.url}}" alt="Image">
+                </div>
+            <div class="class-info">
+                <p><h3>{{k.name}}</h3></p>
+                <p>{{k.price}}</p>
+                    <div class="trainer-info">
+        {%endfor%}              
+{%endblock%}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  لوازم آرایشی و بهداشتی زلفا</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .slideshow {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <br/>
+        <h1 style="color:rgb(182, 226, 226) " >  لوازم آرایشی و بهداشتی زلفا</h1>
+    </header>
+
+    <nav>
+        <a href="/" >خانه</a>
+        <a href="/arayeshi">محصولات</a>
+       
+        <a href="/users">کاربران</a>
+        <a href="/contact">تماس با ما</a>
+    </nav>
+
+
+    <div class="="container>
+        {%block "main"%}
+
+        {%endblock%}
+    </div>
+
+    <footer>
+        <p>&copy;   لوازم آرایشی و بهداشتی زلفا</p>
+    </footer>
+
+</body>
+</html>

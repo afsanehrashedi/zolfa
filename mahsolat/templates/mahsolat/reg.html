@@ -1,0 +1,52 @@
+{%extends "mahsolat/master.html"%}
+{%block "main"%}
+<form method="post" >
+{%csrf_token%}
+<table align="center">
+    <tr>
+        <td>firstname</td>
+        <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+        <td>lastname</td>
+        <td><input type="text" name="lname"></td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td><input type="text" name="e"></td>
+    </tr>
+
+
+    <tr>
+        <td>username</td>
+        <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td>repassword</td>
+        <td><input type="password" name="rpassword"></td>
+    </tr>
+    <tr>
+      
+        <td colspan="2" align="center"><input type="submit" value="Register"></td>
+        
+    </tr>
+    <tr>
+      
+        <td colspan="2" >
+            {%if errors%}
+                {%for i in errors%}
+                   <div style="color:red;">  {{i}} </div>
+                {%endfor%}
+            {%endif%}
+        </td>
+        
+    </tr>
+
+
+</table>
+</form>
+{%endblock%}

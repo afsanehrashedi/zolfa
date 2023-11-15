@@ -1,0 +1,52 @@
+{%extends "mahsolat/master.html"%}
+
+<section >
+    {%block "main"%}
+
+<div">
+<h2>برای ما پیام ارسال کنید</h2>
+</div>
+
+<div>
+<form  method="post" >
+{% csrf_token %}
+<div id="message"></div>
+<label for="name">نام*</label>
+<input id="name" name="name" type="text" required>
+</div>
+
+<div>
+<label for="email">ایمیل*</label>
+<input id="email" name="email" type="email" required>
+</div>
+<div >
+<label for="phone">تلفن*</label>
+<input id="phone" name="phone" type="number" required>
+</div>
+
+<div >
+<label for="subj">موضوع*</label>
+<input type="text" id="subj" name="subj" required>
+</div>
+
+
+<div >
+<label for="comment">پیام شما</label>
+<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+</div>
+
+<div >
+<input type="checkbox" id="test_100">
+<label for="test_100">اطلاعات من را برای بعد که نظر می دهم ذخیره کنید.</label>
+</div>
+<button type="submit" class="btn v7">ارسال پیام</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+{%endblock%}
+</section>
+
+
